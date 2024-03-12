@@ -1,0 +1,34 @@
+<section>
+    <div class="container-fluid home-page">
+        <div class="overlay">
+            <div class="row">
+                <div class="col-md text-center text-light">
+                    <h1>Welcome to our market web</h1>
+                    <h2>We sell the best products</h2>
+                    <button class="mt-2 btn btn btn-outline-light">Go to Store</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pt-4 bg-light categories">
+    <div class="container-fluid">
+        @for (category of categoryList; track $index) {
+            <div class="row m-4">
+                <div class="col text-center">
+                    <h2>{{category |  titlecase}}</h2>
+                </div>
+            </div> 
+            <div class="row">
+                @for (product of productsByCategory[category]; track $index) {
+                    <div class="col d-flex justify-content-center text-center">
+                        <app-card [product]=product></app-card>
+                    </div>
+                }
+            </div>
+            <hr class="mt-4">
+        }
+    </div>
+
+</section>
+    

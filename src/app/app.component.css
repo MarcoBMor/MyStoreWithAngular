@@ -1,0 +1,15 @@
+nav{
+    height: 10vh;
+}
+
+#logo{
+    height: 7vh;
+}
+
+.nav-link:hover{
+    font-weight: bold;
+}
+
+.scrolled{
+    transition: background-color 0.3s ease;
+}

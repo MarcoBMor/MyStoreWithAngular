@@ -1,0 +1,17 @@
+<div class="col d-flex justify-content-center text-center">
+    <div class="card d-flex justify-content-between">
+        <div class="row m-2">
+            <div class="col d-flex card-top align-items-center"><img src="{{ product?.image }}" class="card-img-top cardImage" alt="{{ product?.title }}" ></div>
+        </div>
+        <div class="row px-4">
+            <div class="col">
+                <h5 class="card-title">{{ product?.title }}</h5>
+            </div>
+        </div>
+        <div class="row pb-4">
+            <div class="col d-flex justify-content-center">
+                <button (click)="navigate(product?.id)" class="btn btn-dark" style="width: 80%;">See More</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container-fluid p-0">
+    <div class="products-banner d-flex justify-content-center align-items-center">
+        <h1 class="title">This are our products</h1>
+    </div>
+    <div class="row p-4">
+        <!-- Side navigation -->
+        <div class="col-3">
+          <ul class="list-group">
+            <h3>All Categories</h3>
+            @for (category of categoryList; track $index) {
+                <li class="list-group-item category-link" (click)="selectCategory(category)">
+                    {{ category | titlecase }}
+                </li>
+            }
+          </ul>
+        </div>
+         <!-- Products Section -->
+        <div class="col-9">
+            <div class="row">
+            @for (product of productsByCategoryList; track $index) {
+                <div class="col-4">
+                   <app-card [product]=product></app-card>
+                </div>
+            }
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.home-page {
+    background-image: url('../../../assets/images/home-image.jpg');
+    background-size: cover;
+    height: 100vh;
+    padding: 0 !important;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories{
+    padding: 0 10rem;
+}

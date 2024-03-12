@@ -1,0 +1,16 @@
+.products-banner{
+    background-image: url('../../../assets/images/products.jpg');
+    background-size: cover;
+    height: 50vh;
+    padding: 0 !important;
+}
+
+.title{
+    background-color: white;
+    padding: 0.5rem 2rem;
+    opacity: 0.8;
+}
+
+.category-link{
+    cursor: pointer;
+}

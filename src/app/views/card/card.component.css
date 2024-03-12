@@ -1,0 +1,17 @@
+.card{
+    height: 50vh;
+    width: 100%;
+    border: 2px solid rgb(55, 47, 45);
+    margin-bottom: 2rem;
+}
+
+.card-top{
+    height: 25vh;
+}
+
+.cardImage{
+    height: 25vh;
+    width: 10vw;
+    object-fit: contain;
+    margin: auto;
+}
