@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container">
     @if (loading) {
         <h5>Loading...</h5>
@@ -8,8 +9,30 @@
                 <h4>{{product?.price | currency}}</h4>
                 <h5 class="card-title">{{product?.title}}</h5>
                 <p class="card-text">{{product?.description}}</p>
+=======
+
+<div class="container-xxl p-4 page d-flex align-items-center">
+    @if (loading) {
+        <h5>Loading...</h5>
+    }@else {
+        <div class="product row d-flex justify-content-center align-items-center">
+            <div class="col m-4 border-right d-flex justify-content-center align-items-center">
+                <img src="{{product?.image}}" class="card-img-top" alt="{{product?.title}}">
+            </div>
+            <div class="col text-start">
+                <div class="row">
+                    <h4 class="card-title pb-3">{{product?.title}}</h4>
+                    <h4>{{product?.price | currency}}</h4>
+                    <p class="pt-2 card-text">{{product?.description}}</p>
+                </div>
+>>>>>>> 49626a7 (Add Sort & Change css of product details)
             </div>
         </div>
     }
 </div>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 49626a7 (Add Sort & Change css of product details)

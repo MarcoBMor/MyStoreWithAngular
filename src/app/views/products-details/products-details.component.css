@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 .container{
     display: flex;
     justify-content: center;
+=======
+.page{
+    height: 90vh;
+}
+
+img{
+    width: 70%;
+}
+
+.border-right{
+    border-right: 2px solid rgb(55, 47, 45);
+    padding: 2rem;
+}
+.product{
+    border: 2px solid rgb(55, 47, 45);
+    padding: 4rem;
+>>>>>>> 49626a7 (Add Sort & Change css of product details)
 }

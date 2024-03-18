@@ -16,6 +16,22 @@
         </div>
          <!-- Products Section -->
         <div class="col-9">
+<<<<<<< HEAD
+=======
+            <div class="row p-4">
+                <div class="col"></div>
+                <div class="col d-flex justify-content-end align-items-center">
+                    <label for="sortOption">Sort By:</label>
+                </div>
+                <div class="col">
+                    <select class="form-select" id="sortOption" [(ngModel)]="sortOption" (ngModelChange)="sortProducts()" aria-label="Default select example">
+                        <option selected value="rel">Relevance</option>
+                        <option value="desc">Descendent</option>
+                        <option value="asc">Ascendent</option>
+                    </select>
+                </div>
+            </div>
+>>>>>>> 49626a7 (Add Sort & Change css of product details)
             <div class="row">
             @for (product of productsByCategoryList; track $index) {
                 <div class="col-4">
