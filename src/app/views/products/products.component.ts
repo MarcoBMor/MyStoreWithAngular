@@ -22,6 +22,7 @@ export class ProductsComponent implements OnInit {
   productsByCategoryList: IProduct[] = [];
   categoryList: Category[] = [];
   sortOption: string = 'rel';
+  activeCategory?: Category = undefined;
 
   private _apiService = inject(ApiService);
   
@@ -35,6 +36,7 @@ export class ProductsComponent implements OnInit {
 
   selectCategory(category: Category): void { 
     this.productsByCategoryList = this.productList.filter((product: IProduct) => product.category === category);
+    this.activeCategory = category;
   }
 
   sortProducts(): void {

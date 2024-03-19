@@ -14,3 +14,25 @@
 .category-link{
     cursor: pointer;
 }
+
+li, label{
+    font-size: 1rem;
+}
+
+ul{
+    padding: 0px;
+}
+
+.category-link{
+    list-style-type: none;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-link:hover{
+    border-left: 2px solid rgb(55, 47, 45);
+}
+
+.category-link.active{
+    border-left: 2px solid rgb(55, 47, 45);
+}

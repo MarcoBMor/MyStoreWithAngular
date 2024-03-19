@@ -36,4 +36,8 @@ export class HomeComponent implements OnInit{
   navigate(id: number): void{
     this._router.navigate(['/products', id]);
   }
+
+  goToStore(): void{
+    this._router.navigate(['/products']);
+  }
 }

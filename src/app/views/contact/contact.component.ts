@@ -10,7 +10,7 @@ import { ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angula
   styleUrl: './contact.component.css'
 })
 
-export class ContactComponent implements OnInit {
+export class ContactComponent {
   
   constructor(private formBuilder: FormBuilder){
     this.contactForm = formBuilder.group({
@@ -26,10 +26,6 @@ export class ContactComponent implements OnInit {
     if(this.contactForm.valid){
       console.log(this.contactForm.value);
     }
-  }
-
-  ngOnInit(): void {
-    
   }
 
   hasErrors(field: string, typeError: string){
