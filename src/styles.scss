@@ -11,6 +11,8 @@ $custom-colors: (
 $navbar-dark-color: white;
 $navbar-dark-hover-color: white;
 
+$font-size-base: 1vw;
+
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
