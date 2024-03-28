@@ -22,15 +22,19 @@ export class HomeComponent implements OnInit{
 
   ngOnInit(): void {
     
-    this._apiService.getCategories().subscribe((data: Category[]) => {
-      this.categoryList = data;
-      this.categoryList.forEach(category => {
-        this._apiService.getExamplesCategories(category).subscribe((products: IProduct[]) => {
-          this.productsByCategory[category] = products;
-          
-        });
+    this.categoryList = Object.values(Category);
+    console.log(this.categoryList);
+    this.categoryList.forEach(category => {
+      this._apiService.getExamplesCategories(category).subscribe((products: IProduct[]) => {
+        this.productsByCategory[category] = products;
+        
       });
     });
+    
+    /*this._apiService.getCategories().subscribe((data: Category[]) => {
+      this.categoryList = data;
+      
+    });*/
   }
 
   navigate(id: number): void{
