@@ -11,7 +11,7 @@
 
 .cardImage{
     height: 25vh;
-    width: 10vw;
+    width: 50%;
     object-fit: contain;
     margin: auto;
 }
