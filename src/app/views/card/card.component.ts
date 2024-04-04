@@ -18,8 +18,8 @@ export class CardComponent {
 
   @Input() product?: IProduct;
   
-  navigate(id?: number): void{
-    this._router.navigate(['/products', id]);
+  navigate(_id?: string): void{
+    this._router.navigate(['/products', _id]);
   }
 
   

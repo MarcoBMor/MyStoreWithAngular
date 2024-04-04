@@ -1,21 +1,16 @@
 export interface IProduct {
-    id:          number;
+    _id:        string;
     title:       string;
     price:       number;
     description: string;
     category:    Category;
     image:       string;
-    rating:      Rating;
+    annualSales: number;
 }
 
 export enum Category {
-    Mobiles = "mobiles",
-    Processors = "processors",
-    Tablets = "tablets",
-    Computers = "computers",
-}
-
-export interface Rating {
-    rate:  number;
-    count: number;
+    Mobiles = "mobile",
+    Processors = "processor",
+    Tablets = "tablet",
+    Computers = "computer",
 }

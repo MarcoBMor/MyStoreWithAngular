@@ -21,20 +21,12 @@ export class HomeComponent implements OnInit{
   private _router = inject(Router);
 
   ngOnInit(): void {
-    
     this.categoryList = Object.values(Category);
-    console.log(this.categoryList);
     this.categoryList.forEach(category => {
       this._apiService.getExamplesCategories(category).subscribe((products: IProduct[]) => {
         this.productsByCategory[category] = products;
-        
       });
     });
-    
-    /*this._apiService.getCategories().subscribe((data: Category[]) => {
-      this.categoryList = data;
-      
-    });*/
   }
 
   navigate(id: number): void{

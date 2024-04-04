@@ -27,11 +27,15 @@ export class ProductsComponent implements OnInit {
   private _apiService = inject(ApiService);
   
   ngOnInit(): void {
-    forkJoin([this._apiService.getCategories(), this._apiService.getProducts()]).subscribe((data: [Category[], IProduct[]]) => {
-      this.categoryList = data[0];
-      this.productList = data[1];
+    this.categoryList = Object.values(Category);
+    
+    this._apiService.getProducts().subscribe((data: IProduct[]) => {
+      this.productList = data;
       this.selectCategory(this.categoryList[0]);
+      console.log(this.productList);
     });
+
+    
   };
 
   selectCategory(category: Category): void { 
@@ -41,7 +45,7 @@ export class ProductsComponent implements OnInit {
 
   sortProducts(): void {
     if(this.sortOption === 'rel'){
-      this.productsByCategoryList.sort((a: IProduct, b: IProduct) => a.id - b.id);
+      this.productsByCategoryList.sort((a: IProduct, b: IProduct) => b.annualSales - a.annualSales);
     }else{
       this.productsByCategoryList.sort((a: IProduct, b: IProduct) => {
         if (this.sortOption === 'asc') {
