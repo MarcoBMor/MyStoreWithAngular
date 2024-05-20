@@ -1,24 +1,14 @@
 
 section{
     height: 90vh;
-    background-image: url('../../../assets/images/home-image.jpg');
-    background-size: cover;
-    padding: 0 !important;
-}
-
-.overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container{
     border: 2px solid rgb(55, 47, 45);
-    border-radius: 0.375rem;
-    padding: 0;
+}
+
+h1{
+    margin-top: 2rem;
 }
 
 p{
@@ -34,16 +24,8 @@ span{
     font-size: 1rem;
 }
 
-form{
-    margin: 0rem;
-    padding: 1rem;
-    background-color: white;
-    opacity: 0.7;
-    border-radius: 0.375rem;
-}
-
 .form-control{
-    border-radius: 0.375rem;
+    border-radius: 0;
 }
 
 .form-control.is-invalid:focus{
@@ -58,16 +40,11 @@ form{
 
 .btn-personalized{
     outline: 2px solid rgb(55, 47, 45);
-    border-radius: 0.375rem;
+    border-radius: 0;
     width: 100%;
 }
 
 .btn-personalized:hover{
     background-color:rgb(55, 47, 45);
-    color: white;
-}
-
-.cabecera{
-    background-color:  rgb(55, 47, 45);
     color: white;
 }

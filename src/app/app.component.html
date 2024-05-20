@@ -1,13 +1,7 @@
 <nav class="navbar navbar-expand-lg" data-bs-theme="dark" [ngClass]="{'transparent-nav': transparentNav, 'bg-dark': !transparentNav, 'scrolled fixed-top': scrolled}">
   <div class="container-fluid justify-content-around">
     <div>
-      <a class="navbar-brand mx-auto" routerLink="" [ngClass]="{active: menuOption == 'home'}" (click)="onOption('home')">
-        <div class="d-flex justify-content-center align-items-center">
-          <span class="textoLogo">Example</span>
-          <img id="logo" src="../assets/images/logo.png" alt="logo">
-          <span class="textoLogo">Store</span>
-        </div>
-      </a>
+      <a class="navbar-brand mx-auto" routerLink="" [ngClass]="{active: menuOption == 'home'}" (click)="onOption('home')"><img id="logo" src="../assets/images/logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -23,14 +17,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="contact" [ngClass]="{active: menuOption == 'contact'}" (click)="onOption('contacto')">Contact</a>
-          </li>
-          <li class="nav-item cart-wrapper">
-            <div class="h-100 d-flex justify-content-center align-items-center">
-              <span class="cart-counter">2</span>
-            </div>
-            <a class="nav-link cart-container" routerLink="cart" [ngClass]="{active: menuOption == 'cart'}" (click)="onOption('cart')">
-              <img src="../assets/images/cart.png" alt="cart" id="cart">
-            </a>
           </li>
         </ul>
       </div>
