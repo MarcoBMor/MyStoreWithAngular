@@ -1,27 +1,39 @@
-# LandingPage
+# My Store with Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
+Welcome to the repository for **Store with Angular**! This project is a modern web application built using Angular, a platform for building mobile and desktop web applications.
 
-## Development server
+Basically, is a store that makes use of another of my projects called [MyApiRestWithSpringboot](https://github.com/MarcoBMor/MyApiRestWithSpringBoot.git).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To set up this project locally, you should follow this steps:
+  1. Install MyStoreWithAngular
+  2. Install & Run MyApiRestWithSpringBoot
+  3. Run MyStoreWithAngular
 
-## Code scaffolding
+## 1. Install MyStoreWithAngular
+Open GitBash and execute:
+````bash
+git clone https://github.com/MarcoBMor/MyStoreWithAngular.git
+cd mystorewithangular
+npm install
+````
+## 2. Install & Run MyApiRestWithSpringBoot
+Open a new GitBash and execute:
+````bash
+#Install
+git clone https://github.com/MarcoBMor/MyApiRestWithSpringBoot.git 
+cd myapirestwithspringboot
+mvn clean install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#Run
+mvn spring-boot:run
+````
+## 3. Run MyStoreWithAngular
+Go to the first GitBash or open a new one and execute:
+````bash
+ng serve
+````
 
-## Build
+# Contact
+Marco Beruet Morelli - marcoberuetmorelli@gmail.com
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Project link: [storeAngular](https://github.com/MarcoBMor/storeAngular)
