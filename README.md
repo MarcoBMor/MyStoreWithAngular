@@ -36,4 +36,4 @@ ng serve
 # Contact
 Marco Beruet Morelli - marcoberuetmorelli@gmail.com
 
-Project link: [storeAngular](https://github.com/MarcoBMor/storeAngular)
+Project link: [MyStoreWithAngular](https://github.com/MarcoBMor/MyStoreWithAngular)
