@@ -7,7 +7,8 @@ Basically, is a store that makes use of another of my projects called [MyApiRest
 ## Pre-requisites
 - Have a **JDK** installation on your system. Either set the **JAVA_HOME** environment variable pointing to your JDK installation or have the java executable on your **PATH**.
 - [Download](https://maven.apache.org/download.cgi) & [Install](https://maven.apache.org/install.html) Maven
-  
+
+## Installation
 To set up this project locally, you should follow this steps:
   1. Install & Run MyApiRestWithSpringBoot
   2. Install & Run MyStoreWithAngular
