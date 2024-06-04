@@ -6,11 +6,41 @@ img{
     width: 70%;
 }
 
-.border-right{
+.productImage{
     border-right: 2px solid rgb(55, 47, 45);
     padding: 2rem;
 }
+
 .product{
     border: 2px solid rgb(55, 47, 45);
     padding: 4rem;
+}
+
+.productText{
+    text-align: left;
+}
+
+.productText p{
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .product{
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .product{
+        padding: 2rem;
+    }
+
+    .productImage{
+        border-bottom: 2px solid rgb(55, 47, 45);
+        border-right: 0px;
+    }
+
+    .productText{
+        text-align: center;
+    }
 }

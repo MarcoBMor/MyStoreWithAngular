@@ -16,6 +16,7 @@ export class AppComponent implements OnInit{
   transparentNav: boolean = false;
   scrolled: boolean = false;
   currentUrl:string = '';
+  isMenuOpen: boolean = false;
 
   private _route = inject(Router);
 
@@ -46,8 +47,20 @@ export class AppComponent implements OnInit{
     });
   }
 
-  onOption(menuOption: string){
-    this.menuOption = menuOption;
+  toggleMenu(){
+    this.isMenuOpen = !this.isMenuOpen;
+    if (this.isMenuOpen) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
   }
 
+  onOption(menuOption: string){
+    this.menuOption = menuOption;
+    if(this.isMenuOpen){
+      this.isMenuOpen = false;
+      document.body.classList.remove('overflow-hidden');
+    }
+  }
 }

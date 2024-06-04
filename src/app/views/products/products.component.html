@@ -1,14 +1,17 @@
+<div class="section" style="width: 100vw;">
+
+
+<div class="products-banner d-flex justify-content-center align-items-center">
+    <h1 class="title">This are our products</h1>
+</div>
 <div class="container-fluid p-0">
-    <div class="products-banner d-flex justify-content-center align-items-center">
-        <h1 class="title">This are our products</h1>
-    </div>
-    <div class="row px-4 align-items-center">
-        <div class="col-2">
+    <div class="row px-4 align-items-center m-0">
+        <div class="col-md-2 col-sm-3 col-1">
             <h3 class="">Categories</h3>
         </div>
         <div class="col">
             <div class="row p-4">
-                <div class="col"></div>
+                <div class="col-md"></div>
                 <div class="col d-flex justify-content-end align-items-center">
                     <label for="sortOption">Sort By:</label>
                 </div>
@@ -22,26 +25,28 @@
             </div>
         </div>
     </div>
-    <div class="row px-4">
+    
+    <div class="row px-4 m-0">
         <!-- Side navigation -->
-        <div class="col-2">
-          <ul class="">
+        <div class="col-md-2 col-sm-3 col-12">
+        <ul class="">
             @for (category of categoryList; track $index) {
                 <li class="category-link" [class.active]="activeCategory === category" (click)="selectCategory(category)">
                     {{ category | titlecase }}
                 </li>
             }
-          </ul>
+        </ul>
         </div>
-         <!-- Products Section -->
+        <!-- Products Section -->
         <div class="col">
             <div class="row">
             @for (product of productsByCategoryList; track $index) {
-                <div class="col-md-4 col-sm-6">
-                   <app-card [product]=product></app-card>
+                <div class="col-lg-4 col-md-6 ">
+                <app-card [product]=product></app-card>
                 </div>
             }
             </div>
         </div>
     </div>
+</div>
 </div>

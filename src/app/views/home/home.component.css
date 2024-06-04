@@ -16,3 +16,9 @@
 .categories{
     padding: 0 10rem;
 }
+
+@media (max-width: 991.98px) {
+    .categories{
+        padding: 0;
+    }
+}

@@ -4,10 +4,10 @@
         <h5>Loading...</h5>
     }@else {
         <div class="product row d-flex justify-content-center align-items-center">
-            <div class="col m-4 border-right d-flex justify-content-center align-items-center">
+            <div class="col-sm col-12 m-4 productImage d-flex justify-content-center align-items-center">
                 <img src="{{product?.image}}" class="card-img-top" alt="{{product?.title}}">
             </div>
-            <div class="col text-start">
+            <div class="col m-4 productText">
                 <div class="row">
                     <h4 class="card-title pb-3">{{product?.title}}</h4>
                     <h4>{{product?.price | currency}}</h4>

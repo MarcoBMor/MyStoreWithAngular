@@ -11,6 +11,9 @@ $custom-colors: (
 $navbar-dark-color: white;
 $navbar-dark-hover-color: white;
 
+$transition-collapse: none;
+$transition-collapse-width: none;
+
 $font-size-base: 0.8vw;
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
